@@ -168,15 +168,16 @@ body {
     margin: 0px;
     font-family: 'Raleway';
     font-size: 16px;
+    line-height: 1.75rem;
 }
   
 a {
-    color: #1C9C94;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 article {
@@ -289,18 +290,19 @@ header, main, footer {
 
 .bolded {
   font-weight: bold;
+  font-size: 1.25rem
 }
 
 .projectName span, 
 .jobPosition span {
-  font-size: 0.35cm;
+  font-size: 1rem;
 }
 
 
 .summary {
   max-height: 10%;
-  margin: 2em;
-  padding: 1em;
+  margin: 2rem;
+  padding: 1rem;
   display: flex;
   position: relative;
 }
@@ -337,7 +339,6 @@ header, main, footer {
 
 .projectWrapper hr {
   align-self: center;
-  width: 80vw;
   border-top: 1px solid rgba(0, 0, 0, .1);
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -351,7 +352,36 @@ header, main, footer {
   margin: 0;
 }
 
+.projectDescription a {
+  font-size: 1.75rem;
+
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 .project img {
   width: 10vw; 
   min-width: 330px
+}
+
+/* .avatar {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+} */
+
+.avatar img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
