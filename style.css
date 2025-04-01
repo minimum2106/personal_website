@@ -68,12 +68,16 @@ h3 {
 
 .nav li:first-child {
   float: left;
-  padding-left: 5rem;
+  padding-left: 15rem;
   font-size: 1.25rem; 
 }
 
 .nav li:not(:first-child) {
   float: right; 
+}
+
+.nav li:nth-child(2) {
+  margin-right: 15rem;
 }
 
 .nav li a {
