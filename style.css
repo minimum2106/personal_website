@@ -1,164 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Raleway');
-
-
-
-header {
-  padding: 2em;
-  text-align: center;
-  background-image: url('./img/bg.jpg');
-  background-size: cover;
-  background-position: fixed;
-  color: white;
-}
-
-header section {
-  margin: 0 auto;
-  max-width: 640px;
-}
-
-header img {
-  border-radius: 50%;
-  max-width: 150px;
-}
-
-h1 {
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-
-h3 {
-  text-transform: uppercase;
-}
-
-h3, h4 {
-  font-weight: bold;
-}
-
-main {
-  max-width: 1140px;
-}
-
-main section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.nav_title {
-    float: left;
-  }
-  
-.nav_title a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
-
-.fab {
-  border: 1px solid white;
-  border-radius: 50%;
-  font-size: 1.5em;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  margin: 5px;
-  text-align: center;
-}
-
-a .fab {
-  color: white;
-}
-
-.course, .skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.course .title {
-  color: #509e98;
-  -ms-flex: 0 0 33.3%;
-  flex: 0 0 33.3%;
-  max-width: 33%;
-}
-
-.course .descrition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
-  max-width: 66.6%;
-}
-
-.course .descrition p {
-  padding-left: 1em;
-}
-
-.skills .column {
-  -ms-flex: 0 0 50%%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.skills .column ul, ul.job-description {
-  list-style-type: none;
-}
-
-.skills .column ul > li:before {
-  content: "►";
-  padding-right: 0.5em;
-  color: #509e98;
-}
-
-.school, .job-title {
-  text-transform: capitalize;
-}
-
-.school span, .job-title span {
-  color: #889499;
-  text-decoration: underline;
-}
-
-ul.job-description li:before{
-  content: "✔";
-  padding-right: 0.5em;
-  color: #509e98;
-}
-
-footer {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- text-align: right;
-}
-
-@media only screen and (max-width: 768px) {
-  .course {
-    display: block;
-  }
-
-  .course .title, .course .descrition {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .skills {
-    display: block;
-  }
-
-  .skills .column {
-    max-width: 100%;
-  }
-
-  footer {
-    text-align: center;
-  }
-} */
+/* =========================================== COMMON STYLING  ===========================================*/
 
 html {
     scroll-behavior: smooth;
@@ -181,23 +21,31 @@ a:hover {
 }
 
 article {
-    padding:0 1em;
+  padding:0 1em;
 }
 
 section{
-    margin: 2em;
-    padding-top: 2em;
+  margin: 2em;
+  padding-top: 2em;
 }
 
 header, main, footer {
     margin: 0 auto;
 }
 
-.vertical-line{
-    display: inline-block;
-    border-right: 1px solid black ;
-    padding: 0 10px;
+h3 {
+  font-size: 1.75rem;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+/* =========================================== NAVBAR ===========================================*/
 
 .nav {
     position: fixed;
@@ -229,6 +77,50 @@ header, main, footer {
 .nav li a:hover {
     background-color: #111;
 }
+
+/* =========================================== SUMMARY ===========================================*/
+
+.summary {
+  max-height: 10%;
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+}
+
+.container_ {
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: left;
+}
+
+.image_ img {
+  width: 100%;
+  height:100%;
+  max-width: 300px;
+}
+
+.text_ {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.text_ li {
+  list-style-type: none;
+}
+
+.summary_text {
+  position: relative;
+}
+
+.avatar img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* =========================================== WORK EXPERIENCES ===========================================*/
 
 .workExperience>ul {
     list-style-type: none;
@@ -270,19 +162,6 @@ header, main, footer {
   justify-content: space-between;
 }
 
-.item {
-  padding-bottom: 0.7cm;
-  padding-top: 0.7cm;
-}
-
-.item h2{
-  margin-top: 0;
-}
-
-.lastParagrafNoMarginBottom {
-  margin-bottom: 0;
-}
-
 .workExperience>ul>li ul {
   padding-left: 0.5cm;
   list-style-type: disc;
@@ -293,44 +172,11 @@ header, main, footer {
   font-size: 1.25rem
 }
 
+/* =========================================== PROJECTS  ===========================================*/
+
 .projectName span, 
 .jobPosition span {
   font-size: 1rem;
-}
-
-
-.summary {
-  max-height: 10%;
-  margin: 2rem;
-  padding: 1rem;
-  display: flex;
-  position: relative;
-}
-
-.container_ {
-  margin: 2em;
-  padding: 1em;
-  display: flex;
-  justify-content: left;
-}
-
-.image_ img {
-  width: 100%;
-  height:100%;
-  max-width: 300px;
-}
-
-.text_ {
-  font-size: 20px;
-  padding-left: 20px;
-}
-
-.text_ li {
-  list-style-type: none;
-}
-
-.summary_text {
-  position: relative;
 }
 
 .project {
@@ -357,31 +203,7 @@ header, main, footer {
 
 }
 
-h3 {
-  font-size: 1.75rem;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
 .project img {
   width: 10vw; 
   min-width: 330px
-}
-
-/* .avatar {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-} */
-
-.avatar img {
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
 }
