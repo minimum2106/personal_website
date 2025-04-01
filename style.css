@@ -330,3 +330,28 @@ header, main, footer {
 .summary_text {
   position: relative;
 }
+
+.project {
+  display: flex;
+}
+
+.projectWrapper hr {
+  align-self: center;
+  width: 80vw;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectDescription {
+  padding-left: 1rem;
+}
+
+.projectDescription h4 {
+  margin: 0;
+}
+
+.project img {
+  width: 10vw; 
+  min-width: 330px
+}
