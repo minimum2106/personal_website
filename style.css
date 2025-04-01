@@ -61,9 +61,19 @@ h3 {
     overflow: hidden;
     background-color: #333;
   }
-  
+
 .nav li {
-    float: left;
+  padding-right: 0 1rem;
+}
+
+.nav li:first-child {
+  float: left;
+  padding-left: 5rem;
+  font-size: 1.25rem; 
+}
+
+.nav li:not(:first-child) {
+  float: right; 
 }
 
 .nav li a {
@@ -91,6 +101,7 @@ h3 {
 .container_ {
   margin: 2em;
   padding: 1em;
+  padding-top: 4rem;
   display: flex;
   justify-content: left;
 }
