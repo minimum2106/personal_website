@@ -296,10 +296,6 @@ header, main, footer {
   font-size: 0.35cm;
 }
 
-/* img.resize {
-  width:auto; 
-  height: 20px;
-} */
 
 .summary {
   max-height: 10%;
@@ -308,10 +304,6 @@ header, main, footer {
   display: flex;
   position: relative;
 }
-
-/* .summary div {
-width: 50%;
-} */
 
 .container_ {
   margin: 2em;
@@ -331,17 +323,6 @@ width: 50%;
   padding-left: 20px;
 }
 
-
-/* .summary img {
-    height: 100%;
-    width: auto;
-    position: relative;
-    /* max-width: 30%;
-    max-height: 30%;  */
-    /* margin-right: 1.5em; */
-    /* width: 100%; */
-}
-
 .summary_text {
   position: relative;
-} */
+}
