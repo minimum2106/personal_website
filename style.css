@@ -25,9 +25,8 @@ article {
 }
 
 section{
-  margin: 2rem;
-  padding-top: 2rem;
-  padding: 1em;
+  margin: 1rem 15rem;
+  padding-top: 3rem;
 }
 
 header, main, footer {
