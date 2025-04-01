@@ -323,6 +323,10 @@ header, main, footer {
   padding-left: 20px;
 }
 
+.text_ li {
+  list-style-type: none;
+}
+
 .summary_text {
   position: relative;
 }
