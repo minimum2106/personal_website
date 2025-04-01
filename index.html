@@ -1,9 +1,211 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <meta charset="UTF-8">
 
-<p>Hello Im Quan.</p>
+    <!-- <title>CV - Ocat</title>
+    <meta name="description" content="simple CV example created with HTML and CSS">
+    <meta name="author" content="Fly Nerd">
+    <link rel="icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
 
-</body>
+<body>       
+    <main>
+        <div class="nav"> 
+            <ul> 
+              <li><a class="active" href="#about_me">About me</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#project">Projects</a></li>
+            </ul>
+        </div>
+        <div class="container_">
+            <div class="image_">
+              <img src="./img/avatar.jpg">
+            </div>
+            <div class="text_">
+              <h1>Paris is one of the most magnificient cities in France.</h1>
+            </div>
+        </div>
+        <!-- <div id="about_me" class="summary">
+            <div>
+                <img src="./img/avatar.jpg"/>
+            </div>
+            
+            <div class="summary_text">
+                <section>
+                    <p>Hello! I am <strong> Hong Quan TRAN</strong> .</p>
+                    
+                    Contact: 
+                    <div class="vertical-line">hello</div>
+                    <a href="https://github.com/minimum2106" class="vertical-line" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hong-quan-tran-363264280/" class="vertical-line" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </section>
+            </div>
+        </div> -->
+        <section id="education">
+        <h3>Education</h3>
+        <article>
+            <div class='school'>
+            <span>2022-2024</span> <strong>Université Paris Cité</strong>
+            </div>
+            <div class="descrition">
+                Machine Learning pour la Science des Données
+            </div>
+        </article>
+        <article>
+            <div class='school'>
+            <span>2019-2022</span> <strong>University of Science and Technology of Hanoi</strong>
+            </div>
+            <div>
+                <li>Erasmus+ Scholarship for an exchange program 2021-2022.</li>
+                <li>USTH Scholarship regulations for students of the academic year 2021-2022.</li>
+                <li>USTH Internship Scholarship for students of the academic year 2020-2021.</li>
+                <li>USTH Scholarship regulations for students of the academic year 2019-2020.</li>
+            </div>
+        </article>
+        </section>
+
+        <!-- ################################ Experiences ################################ -->
+
+        <section id="experience">
+        <h3>Experiences</h3>
+        <div class="workExperience">
+            <h2>
+              Work experience
+            </h2>
+            <ul>
+              <li>
+                <div class="jobPosition">
+                  <span class="bolded">
+                    Data Scientist Apprentice
+                  </span>
+                  <span>
+                    Jun 2014 - Sept 2015
+                  </span>
+                </div>
+                <div class="projectName bolded">
+                  <span>
+                    HephIA
+                  </span>
+                </div>
+                <div class="smallText">
+                  <p>
+                    Quisque rutrum mollis ornare. In pharetra diam libero, non interdum dui imperdiet quis. Quisque aliquam sapien in libero finibus sodales. Mauris id commodo metus. In in laoreet dolor.
+                  </p>
+                  <ul>
+                    <li>
+                      Integer commodo ullamcorper mauris, id condimentum lorem elementum sed. Etiam rutrum eu elit ut hendrerit. Vestibulum congue sem ac auctor semper. Aenean quis imperdiet magna. Sed eget ullamcorper enim. Vestibulum consequat turpis eu neque efficitur blandit sed sit amet neque. Curabitur congue semper erat nec blandit.
+                    </li>
+                  </ul>
+                  <p>
+                    <span class="bolded">Skills: </span>Accounting, Word, Powerpoint
+                  </p>
+                </div>
+              </li>
+        </div>
+  
+
+        <article>
+            <div class='job-title'>
+            <span>03.2018 - 06.2018</span> <strong>HephIA</strong><br> <strong>Position:</strong> Data Scientist Apprentice
+            </div>
+            <div>
+            <p>
+                During my time at HephIA, a startup specializing in innovative machine learning solutions, I’ve had the privilege of working in a dynamic and versatile role that allowed me to experiment across multiple responsibilities. 
+
+                <strong>2022-2023:</strong> 
+                <li> Machine Learning techniques (Unsupervised Learning algorithms like KMeans, SOM, ... for large-scale datasets) to analyze complex datasets from clients.</li> 
+                <li> Actively participating in product development by constantly testing and providing feedback as a Data Scientist on its functionality and user experience to ensure that the product was both user-friendly and aligned with the needs of our clients. </li>
+                <li> Developing the product (Python, Scala, Spark, Github, CI/CD). </li>
+
+                <strong>2023-2024:</strong> 
+                <li> Working on pre-trained NLP models for solving NER problems (detecting private information). I worked on this project in different stages: 
+                    <ul>
+                        <li>Collecting and preprocessing raw data, Generating synthetic data if needed</li>
+                        <li>Training and Finetuning NLP models </li>
+                        <li>Evaluating models and applying MLOps</li>
+                    </ul>
+                </li>
+                <li> Applying and implementing Agentic RAG pipeline to help clients with daily tasks (searching information across their internal database, summarizing documents, ...) using LangChain, LangGraph, LlamaIndex, ... </li>
+                <li> Developing the core product of HephIA (Python, CI/CD). </li>
+            </p>
+            <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
+            </div>
+        </article>
+        <article>
+            <div class='job-title'>
+            <span>03.2018 - 06.2018</span> <strong>HephIA</strong><br> <strong>Position:</strong> Data Scientist Apprentice
+            </div>
+            <div>
+            <p>
+                During my time at HephIA, a startup specializing in innovative machine learning solutions, I’ve had the privilege of working in a dynamic and versatile role that allowed me to experiment across multiple responsibilities. 
+
+                <strong>2022-2023:</strong> 
+                <li> Machine Learning techniques (Unsupervised Learning algorithms like KMeans, SOM, ... for large-scale datasets) to analyze complex datasets from clients.</li> 
+                <li> Actively participating in product development by constantly testing and providing feedback as a Data Scientist on its functionality and user experience to ensure that the product was both user-friendly and aligned with the needs of our clients. </li>
+                <li> Developing the product (Python, Scala, Spark, Github, CI/CD). </li>
+
+                <strong>2023-2024:</strong> 
+                <li> Working on pre-trained NLP models for solving NER problems (detecting private information). I worked on this project in different stages: 
+                    <ul>
+                        <li>Collecting and preprocessing raw data, Generating synthetic data if needed</li>
+                        <li>Training and Finetuning NLP models </li>
+                        <li>Evaluating models and applying MLOps</li>
+                    </ul>
+                </li>
+                <li> Applying and implementing Agentic RAG pipeline to help clients with daily tasks (searching information across their internal database, summarizing documents, ...) using LangChain, LangGraph, LlamaIndex, ... </li>
+                <li> Developing the core product of HephIA (Python, CI/CD). </li>
+            </p>
+            <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
+            </div>
+        </article>
+        </section>
+
+        <!-- ################################ Projects ################################ -->
+        <section id="project">
+            <h3>Projects</h3>
+            <div class="project">
+                <div><img src="img/projects/kitten-4557097_1280.jpg" style="width: 10vw; min-width: 330px"></div>
+                <div>
+                    <h4><a href="https://github.com/minimum2106/FPT-Data-Centric">Project Name</a></h4>
+                    <p>Project Description</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div><img src="img/projects/kitten-4557097_1280.jpg" style="width: 10vw; min-width: 330px"></div>
+                <div>
+                    <h4><a href="https://github.com/minimum2106/FPT-Data-Centric">Project Name</a></h4>
+                    <p>Project Description</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div><img src="img/projects/kitten-4557097_1280.jpg" style="width: 10vw; min-width: 330px"></div>
+                <div>
+                    <h4><a href="https://github.com/minimum2106/FPT-Data-Centric">Project Name</a></h4>
+                    <p>Project Description</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
 </html>
-

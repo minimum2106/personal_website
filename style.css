@@ -1,0 +1,347 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav_title {
+    float: left;
+  }
+  
+.nav_title a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+.course, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title {
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+.school, .job-title {
+  text-transform: capitalize;
+}
+
+.school span, .job-title span {
+  color: #889499;
+  text-decoration: underline;
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #A7B8BF;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+  
+a {
+    color: #1C9C94;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+article {
+    padding:0 1em;
+}
+
+section{
+    margin: 2em;
+    padding-top: 4em;
+}
+
+header, main, footer {
+    margin: 0 auto;
+}
+
+.vertical-line{
+    display: inline-block;
+    border-right: 1px solid black ;
+    padding: 0 10px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #111;
+}
+
+.workExperience>ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+.workExperience>ul>li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 0.5cm;
+  padding-left: 0.5cm;
+}
+
+.workExperience>ul>li:before {
+  background-color: #b8abab;
+  width: 0.05cm;
+  content: '';
+  position: absolute;
+  top: 0.1cm;
+  bottom: -0.2cm; /* change this after border removal */
+  left: 0.05cm;
+}
+
+.workExperience>ul>li::after {
+  content: '';
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23484444' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -0.09cm;
+  top: 0;
+  width: 0.35cm;
+  height: 0.35cm;
+}
+
+.jobPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  padding-bottom: 0.7cm;
+  padding-top: 0.7cm;
+}
+
+.item h2{
+  margin-top: 0;
+}
+
+.lastParagrafNoMarginBottom {
+  margin-bottom: 0;
+}
+
+.workExperience>ul>li ul {
+  padding-left: 0.5cm;
+  list-style-type: disc;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.projectName span, 
+.jobPosition span {
+  font-size: 0.35cm;
+}
+
+/* img.resize {
+  width:auto; 
+  height: 20px;
+} */
+
+.summary {
+  max-height: 10%;
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  position: relative;
+}
+
+/* .summary div {
+width: 50%;
+} */
+
+.container_ {
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: left;
+}
+
+.image_ img {
+  width: 100%;
+  height:100%;
+  max-width: 300px;
+}
+
+.text_ {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+
+/* .summary img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    /* max-width: 30%;
+    max-height: 30%;  */
+    /* margin-right: 1.5em; */
+    /* width: 100%; */
+}
+
+.summary_text {
+  position: relative;
+} */
