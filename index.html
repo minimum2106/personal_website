@@ -15,8 +15,8 @@
             <ul> 
               <li><a class="active" href="#aboutMe">About <span style="color: red;">Quan!</span></a></li>
               <li><a href="#project">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
               <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
             </ul>
         </div>
         <section id="aboutMe" class="summaryWrapper">
@@ -44,36 +44,7 @@
                 </div>
             </div>
         </section>
-        <section id="education" class="infoSection">
-            <h1>Education</h1>
-            <ul>
-                <li>
-                    <div class="periodHeader">
-                        <h3 class="bolded">Machine Learning pour la Science des Données (MLSD) </h3> 
-                        <span> Oct 2022 - Sep 2024 </span>
-                    </div>
-                    <h5 class="periodLoc bolded"><span>Université Paris Cité | Master</span></h5>
-                </li>
-                <li>
-                    <div class="periodHeader">
-                        <h3 class="bolded"> Information and Communication Technology | Bachelor </h3>
-                        <span> Oct 2019 - Sep 2022 </span>
-                    </div>
-                    <h5 class="periodLoc bolded"><span>University of Science and Technology of Hanoi</span></h5>
-                    <div class="periodDescription">
-                        <ul>
-                            <li><strong>Erasmus+ Scholarship</strong> for an exchange program 2021-2022.</li>
-                            <li>USTH Scholarship regulations for students of the academic year 2021-2022.</li>
-                            <li>USTH Internship Scholarship for students of the academic year 2020-2021.</li>
-                            <li>USTH Scholarship regulations for students of the academic year 2019-2020.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
         <!-- ################################ Experiences ################################ -->
-
         <section id="experience" class="infoSection">
             <h1>Work Experiences</h1>            
             <ul>
@@ -88,26 +59,40 @@
                             During my time at HephIA, a startup specializing in innovative machine learning solutions, I’ve had the privilege of working 
                             in a dynamic and versatile role that allowed me to experiment across multiple responsibilities. 
                         </p>
-                        <strong>2022-2023:</strong> 
-                        <ul>
-                            <li> Machine Learning techniques (Unsupervised Learning algorithms like KMeans, SOM, ... for large-scale datasets) to analyze complex datasets from clients.</li>                   
-                            <li> Actively participating in product development by constantly testing and providing feedback as a Data Scientist on its functionality and user experience to ensure that the product was both user-friendly and aligned with the needs of our clients. </li>
-                            <li> Developing the product (Python, Scala, Spark, Github, CI/CD). </li>
-                        </ul>
                         <strong>2023-2024:</strong>
                         <ul>
-                            <li> Working on pre-trained NLP models for solving NER problems (detecting private information). I worked on this project in different stages: 
+                            <li> 
+                                Developed NLP models for <strong>Named Entity Recognition (NER)</strong> to detect sensitive information in legal documents, reducing the
+                                percentage of undetected entities to less than 1% <strong></strong>(FN < 1%)</strong>. I worked on this project in different stages: 
                                 <ul>
                                     <li>Collecting and preprocessing raw data, Generating synthetic data if needed</li>
-                                    <li>Training and Finetuning NLP models </li>
-                                    <li>Evaluating models and applying MLOps</li>
+                                    <li>Training and Finetuning NLP models <strong>(LoRA, QLoRA, Quantization, ...)</strong></li>
+                                    <li>Integrated <strong>MLflow</strong> to manage and oversee the company's machine learning models. <strong>(MLOps)</strong></li>
                                 </ul>
                             </li>
-                            <li> Applying and implementing Agentic RAG pipeline to help clients with daily tasks (searching information across their internal database, summarizing documents, ...) using LangChain, LangGraph, LlamaIndex, ... </li>
-                            <li> Development of HephIA’s core product (Python, CI/CD), a solution focused on integrating modern NLP methods to optimize the work of legal professionals (lawyers, legal advisors, etc.)</li>        
+                            <li> 
+                                Implemented and migrated RAG and Agentic AI workflows <strong>(LangGraph, LangChain, etc.)</strong> into the company's product to
+                                address various business challenges, including internal database search systems, automatic document summarization tools,
+                                and other custom use cases. 
+                            </li>
+                            <li> Development of HephIA’s core product <strong>(Python, CI/CD)</strong>, a solution focused on integrating modern NLP methods to optimize the work of legal professionals (lawyers, legal advisors, etc.)</li>        
                         </ul>
                         <p>
-                            <span class="bolded">Skills: </span> Programming, NLP, Pytorch, LlamaIndex, Langchain, Langgraph, RAG, 
+                            <span class="bolded">Skills: </span> Programming, NLP, Pytorch, LlamaIndex, Langchain, Langgraph, RAG, OCR, MLOps, MLflow, ...
+                        </p>
+                        <strong>2022-2023:</strong> 
+                        <ul>
+                            <li> Applied Unsupervised Learning Algorithms <strong>(KMeans, SOM, etc.)</strong> to large-scale client datasets to extract valuable insights</li>                   
+                            <li> 
+                                Actively contributed to the development of the analytical product: <strong>continuous testing, providing functional feedback, and
+                                improving the user experience</strong> as a Data Scientist.</li>
+                            <li> 
+                                Contributed to the technical development of the product analytique using <strong>Python, Scala, Spark, GitHub, and CI/CD
+                                integration</strong>. 
+                            </li>
+                        </ul>
+                        <p>
+                            <span class="bolded">Skills: </span> Programming, Python, CI/CD, Unsupervised Learning, ...
                         </p>
                     </div>
                 </li>
@@ -120,10 +105,50 @@
                     <div class="periodDescription">
                         <p>During my internship at HephIA, under the supervision of Professor Mustapha Lebbah (Paris-Saclay University - UVSQ-Versailles), I was tasked with: </p>
                         <ul>
-                            <li>Researching and implementing various unsupervised learning algorithms, specifically Self-Organizing Maps (SOM).</li>
-                            <li>Developing visualizations (Bokeh, Matplotlib, Seaborn) to integrate these algorithms into HephIA’s existing framework, enhancing the analytical capabilities of the product. 
-                                These visualizations focus on representing output of Unsupervised Learning algorithms with Time Series data as input.
+                            <li>
+                                Developed visualizations using <strong>Bokeh, Matplotlib, and Seaborn</strong> to represent Time-Series data from Unsupervised Learning
+                                Algorithms, focusing on the <strong>Self-Organizing Maps (SOM)</strong> algorithm.
                             </li>
+                            <li>Integrated visualizations into the analytical product developed by HephIA <strong>(PySpark, Python, CI/CD)</strong>.</li>
+                        </ul>
+                        <p>
+                            <span class="bolded">Skills: </span> Programming, Python, CI/CD, Unsupervised Learning, Data Visualization, Bokeh, Matplotlib, ...
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ################################ Education ################################ -->
+        <section id="education" class="infoSection">
+            <h1>Education</h1>
+            <ul>
+                <li>
+                    <div class="periodHeader">
+                        <h3 class="bolded">Machine Learning pour la Science des Données (MLSD) </h3> 
+                        <span> Oct 2022 - Sep 2024 </span>
+                    </div>
+                    <h5 class="periodLoc bolded"><span>Université Paris Cité | Master</span></h5>
+                    <p>
+                        <strong>Courses</strong>: Big Data (Hadoop MapReduce, Apache Cassandra, Spark), Deep Learning, NLP, Computer Vision, Time Series,
+                        Unsupervised Learning, Reinforcement Learning, ...
+                    </p>
+                </li>
+                <li>
+                    <div class="periodHeader">
+                        <h3 class="bolded"> Information and Communication Technology | Bachelor </h3>
+                        <span> Oct 2019 - Sep 2022 </span>
+                    </div>
+                    <h5 class="periodLoc bolded"><span>University of Science and Technology of Hanoi</span></h5>
+                    <div class="periodDescription">
+                        <p>
+                            <strong>Courses</strong>: : Databases, Distributed Computing, Algorithms and Data Structures, Deep Learning, Machine Learning, Programming,
+                            Probability and Statistics, Linear Algebra, ...
+                        </p>    
+                        <ul>
+                            <li><strong>Ranked top 3 of my batch</strong></li>
+                            <li><strong>Erasmus+ Scholarship</strong> for an exchange program 2021-2022.</li>
+                            <li><strong>USTH Scholarship regulations for students of the academic year</strong> (2021-2022, 2020-2021, 2019-2020).</li>
                         </ul>
                     </div>
                 </li>
