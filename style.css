@@ -428,3 +428,10 @@ a:focus,
 section {
   scroll-margin-top: 60px;
 }
+
+/* Style for external link icons */
+.fas.fa-external-link-alt {
+  font-size: 0.8em; /* Make the icon smaller */
+  vertical-align: middle; /* Align it better with text */
+  margin-left: 0.3em; /* Add some spacing from the text */
+}
