@@ -384,6 +384,15 @@ section {
   flex: 1;
 }
 
+.periodHeader h3 a {
+  color: var(--color-neutral-800);
+  text-decoration: none;
+}
+
+.periodHeader h3 a:hover {
+  text-decoration: underline;
+}
+
 .periodHeader span {
   font-size: var(--font-size-sm);
   color: var(--color-neutral-500);
@@ -495,6 +504,7 @@ section {
 
 .projectDescription a:hover {
   color: var(--color-primary-dark);
+  text-decoration: underline;
 }
 
 .projectDescription p {
