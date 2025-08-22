@@ -393,6 +393,7 @@ section {
   text-decoration: underline;
 }
 
+
 .periodHeader span {
   font-size: var(--font-size-sm);
   color: var(--color-neutral-500);
